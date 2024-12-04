@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+/*------------------------------------------------------ global styles*/
+
+html {
+    overflow-y: scroll; /* Ensures that the vertical scrollbar is always visible */
+}
+
+.g-body {
+    /* General body styling */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #4d4a4a;   
+    margin: 0 auto;
+    border-left: 40px;
+    border-right: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+nav ul {
+    /* Navigation bar list styling */
+    padding: 0;              
+    padding-top: 10px;             
+    margin: 0;               
+    border-bottom: 1px solid;
+    display: flex;           
+    justify-content: space-between; 
+    align-items: center;     
+}
+
+nav ul li {
+    /* Navigation list item styling */
+    color: #4d4a4a;  
+    display: flex;            
+    align-items: center;      
+}
+
+
+nav ul li a {
+    /* Navigation link styling */
+    color: #4d4a4a;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;    /* Smooth transition for all properties */
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    font-weight: bold;            /* Bold text on hover */
+    transform: scale(1.1);        /* Slight increase in size */
+    color: #000;                  /* Change text color to black on hover */
+}
+
+/*-------------------------------------------------------p-home styling*/
+#p-home {
+    /* Profile section container */
+    display: flex;          
+    gap: 20px;                     
+    max-width: 1000px;             
+    margin: 0 auto;                
+    padding-top: 50px;             
+}
+
+#p-home #s-profile-picture {
+    /* Styling for the profile picture container */
+    width: 200px;  
+    height: 200px; 
+    border-radius: 50%;  
+    overflow: hidden; 
+    display: flex;       
+    align-items: flex-start; 
+    justify-content: center; 
+    flex-shrink: 0; 
+    min-width: 200px; 
+}
+
+#p-home #s-profile-picture img {
+    /* Styling for the profile image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top; 
+     
+}
+
+#p-home #s-introduction-box {
+    /* Styling for the introduction box */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 10px;  
+    padding: 10px;
+}
+
+#p-home #s-introduction-header {
+    /* Styling for the introduction header */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#p-home #s-introduction-content {
+    /* Styling for the introduction content */
+    font-size: 1em;
+    max-width: 600px;
+}
+
+/*-------------------------------------------------------p-resume page styling*/
+
+main {
+    /* Main section styling */
+    max-width: 800px;
+    margin-top: 40px;
+    
+}
+
+/*-------------------------------------------------------p-web app samples page styling*/
+
+#p-webapps-header {
+    /* Header section for web app samples */
+    text-align: center;  /* Horizontally centers the text in the header */
+    width: 100%;         /* Makes the header take up the full width */
+    margin: 0 auto;      /* Ensures it's centered horizontally */
+    padding: 20px 0;    
+    max-width:900px;
+}
+
+#p-webapps-main {
+    /* Main section for web app samples */
+    max-width: 900px; 
+    margin: 0 auto;    /* Center the main element */
+    padding-bottom: 100px;
+}
+
+.app-grid {
+    /* Grid layout for the app cards */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px;
+    
+}
+
+.app-card {
+    /* Card styling for each app */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.269);
+    padding: 20px;
+}
+
+.app-image {
+    /* Styling for app images */
+    height: 200px;
+    border-radius: 8px;
+}
+
+h2 {
+    /* Styling for h2 headings */
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.description {
+    /* Styling for the description text */
+    font-size: 1rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+h3 {
+    /* Styling for h3 headings */
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #3e4e59;
+}
+
+ul {
+    /* Styling for unordered lists */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+ul li {
+    /* Styling for list items */
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/*------------------------------------------------------ p-photography specific styles */
+
+#p-photography {
+    /* Photography section container */
+    padding-top: 20px;
+}
+
+#p-photography h1 {
+    /* Styling for photography section header */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#p-photography p {
+    /* Styling for photography section paragraph */
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+#p-photography .app-grid {
+    /* Grid layout for photography images */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns for larger screens */
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+
+#p-photography .app-card {
+    /* Styling for photography app cards */
+    padding: 0;  
+    margin: 0;  
+    border: none;  
+}
+
+#p-photography .app-image {
+    /* Styling for photography images */
+    width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Adds smooth transition */
+}
+
+
+#p-photography .app-image:hover {
+    /* Hover effect to increase image size */
+    transform: scale(1.1); /* Increase the size of the image by 10% */
+}
+
+
+@media (max-width: 900px) {
+    /* Responsive styling for screen widths under 900px */
+    .app-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 equal columns for screens smaller than 1000px */
+        gap: 1.5rem;        
+        max-width: 900px;                    /* Adjust the gap to suit the new layout */   
+    }
+
+    .app-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #p-photography .app-grid {
+        /* Adjust grid layout for photography section */
+        grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+        gap: 1.5rem;  /* Adjust the gap between the columns */
+        max-width: 900px;  /* Adjust the max-width to suit the new layout */
+    }
+
+}
+
+@media (max-width:750px) {
+    /* Responsive styling for screen widths under 750px */
+    #p-photography .app-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 equal columns for screens smaller than 1000px */
+        gap: 1.5rem;  /* Adjust the gap between the columns */
+        max-width: 700px;  /* Adjust the max-width to suit the new layout */
+    }
+}
+
+@media (max-width: 700px) {
+    nav ul li.social.icons {
+        display: none;  
+    }
+
+    nav ul {
+        display: flex;             
+        justify-content: center;   
+        width: 100%;               
+        padding: 0;                
+        margin: 0;                 
+    }
+
+    nav ul li {
+        display: flex;             
+        align-items: center;       
+    }
+
+    #p-home {
+        flex-direction: column;  
+        gap: 10px;               
+        padding-top: 20px;       
+    }
+
+    #p-home #s-profile-picture {
+        width: 150px;            
+        height: auto;            
+        min-height: 150px;       
+        margin: 0 auto;          
+    }
+
+    #p-home #s-profile-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;       
+        object-position: top;    
+    }
+
+    #p-home #s-introduction-box {
+        width: 100%;   
+        text-align: center;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #p-home #s-introduction-header {
+        font-size: 1.3em; 
+    }
+
+    #p-home #s-introduction-content {
+        font-size: 1em; 
+        padding: 10px;  
+    }
+    #p-webapps-main{
+        display:flex;
+        justify-content: center;
+    }
+    .app-grid {
+        grid-template-columns: 1fr;  /* Single column layout for small screens */
+        gap: 1rem;                  /* Reduce gap for better mobile layout */
+        max-width: 500px;
+    }
+    .app-card {
+        padding: 1rem;   
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 550px)  {
+    /* Responsive adjustments for screen widths under 550px */
+    #p-photography .app-grid {
+        display: grid;
+        grid-template-columns: 1fr;  /* 1 column layout for smaller screens */
+        justify-items: center;
+        align-items: center;
+        gap: 1.5rem;  /* Adjust the gap for mobile screens */
+        max-width: 100%;  /* Ensure the grid takes up full width */
+    } 
+}
