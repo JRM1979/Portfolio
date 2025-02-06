@@ -3,7 +3,28 @@
 /*------------------------------------------------------ global styles*/
 
 html {
-    overflow-y: scroll; /* Ensures that the vertical scrollbar is always visible */
+    overflow-y: auto; /* Ensures that the vertical scrollbar is always visible */
+    scrollbar-gutter: stable; /* Reserves space for the scrollbar */
+}
+
+
+/* Target all scrollbars on the page */
+::-webkit-scrollbar {
+    width: 12px;  /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    display: none;  /* Make the track invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #20bd4500;  /* Make the thumb visible */
+    border-radius: 6px;  /* Optional: Adds rounded corners to the thumb */
+}
+
+/* Optional: Thumb hover state */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  /* Darker color on hover */
 }
 
 .g-body {
